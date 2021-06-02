@@ -17,19 +17,18 @@ a { text-decoration: none; color: #E9B857; }
 a:focus, button:focus { outline: 3px solid black; }
 .superscript { font-size: 1.4em; margin: 0; font-weight: 300; }
 .sub { font-size: 1.2em; line-height: 1.6em; }
-.branding { width: 240px; height: 135px; display: block; margin: auto; }
+.branding { width: 360px; height: 203px; display: block; }
 .branding-menu { width: 300px; height: 300px; margin: auto; display: block; }
 header { 
-	height: 85vh;
+	height: 100vh;
 	width: auto;
 	margin: auto;
 	/*padding: 2%;*/
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+
 	align-items: center;
 	flex-wrap: wrap;
-	text-align: center;
 	color: #fff;
 }
 .index-cover { background: url('../images/rimnamthai-index-cover.jpg') bottom center no-repeat #231f20; background-size: cover; height: 100vh; }
@@ -316,6 +315,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 @media screen and (max-width: 767px){
 	header { height: 100vh; }
 	footer { margin-bottom: 15%; }
+	.branding { width: 240px; height: 135px; margin: auto; }
 	.branding-menu { width: 200px; height: 200px; }
 	section.about-us { flex-direction: column-reverse; }
 	.about-img, .map-img { height: 50vh; }
