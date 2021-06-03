@@ -1,23 +1,25 @@
 @font-face {
-    font-family: 'ps-kinlock';
-    src: url('../fonts/ps-kinlock-regular-webfont.woff2') format('woff2'),
-         url('../fonts/ps-kinlock-regular-webfont.woff') format('woff');
+    font-family: '19-pralight';
+    src: url('../fonts/19-pra_light-webfont.woff2') format('woff2'),
+         url('../fonts/19-pra_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-body { font-size: 1em; font-weight: 300; font-family: 'Barlow', sans-serif; line-height: 1.6em; padding: 0; margin: 0; background: #16303A;}
-h1, h2, h3 { font-family: 'ps-kinlock', serif; font-weight: 300; line-height: 1.2em; margin-top: 0; }
+body { font-size: 1em; font-weight: 300; font-family: 'Montserrat', sans-serif; font-weight: 400; line-height: 1.6em; padding: 0; margin: 0; background: #191718;}
+h1, h2, h3 { font-family: '19-pralight', sans-serif; line-height: 1.2em; margin-top: 0; }
 h1 { font-size: 2.5em; color: #E9B857; }
 h2 { font-size: 2em; color: #E9B857; }
 h3 { font-size: 1.4em; color: #83D1DE; }
 p { font-size: 1em; color: #fff; }
 a { text-decoration: none; color: #E9B857; }
 a:focus, button:focus { outline: 3px solid black; }
+.location { font-weight: 600; text-transform: uppercase; }
 .superscript { font-size: 1.4em; margin: 0; font-weight: 300; }
-.sub { font-size: 1.2em; line-height: 1.6em; }
-.branding { width: 360px; height: 203px; display: block; }
+.sub { font-size: 1.2em; line-height: 1.6em; color: #fff; font-style: normal; }
+.branding { width: 320px; height: 141px; display: block; }
+.senn-symbol { display: none; }
 .branding-menu { width: 300px; height: 300px; margin: auto; display: block; }
 header { 
 	height: 100vh;
@@ -31,7 +33,7 @@ header {
 	flex-wrap: wrap;
 	color: #fff;
 }
-.index-cover { background: url('../images/rimnamthai-index-cover.jpg') bottom center no-repeat #231f20; background-size: cover; height: 100vh; }
+.index-cover { background: url('../images/senn-background.png') top right no-repeat #231f20; background-size: cover; align-items: normal; }
 .menu-cover { background: url('../images/rimnamthai-menu-cover.jpg') center no-repeat #16303A; background-size: cover; }
 .drinks-cover { background: url('../images/rimnamthai-drinks-cover.jpg') center no-repeat #16303A; background-size: cover;  }
 #nav-menu { 
@@ -125,7 +127,7 @@ header {
 
 main { background: #222; }
 footer { 
-	background: #16303A;
+	background: #191718;
 	color: #fff;
 	padding: 2.5% 5%;
 	display: flex;
@@ -277,7 +279,7 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #83D1DE; }
 
 .preview { width: 100%; max-width: 270px; max-height: 270px; }
 .price { color: #fff; font-weight: 700; }
-.tags { display: inline-block; margin-right: 5px; font-family: 'Barlow', sans-serif; font-size: 0.75em; vertical-align: top; }
+.tags { display: inline-block; margin-right: 5px; font-family: 'Montserrat', sans-serif; font-size: 0.75em; vertical-align: top; }
 .spicy { color: #ff8993; }
 .vegetarian { color: #33c825; }
 .vegan { color: #25c88c; }
@@ -315,9 +317,10 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 @media screen and (max-width: 767px){
 	header { height: 100vh; }
 	footer { margin-bottom: 15%; }
-	.branding { width: 240px; height: 135px; margin: auto; }
+	.branding { width: 240px; height: 106px; margin: auto; }
+	.senn-symbol { display: block; margin: auto; }
 	.branding-menu { width: 200px; height: 200px; }
-	section.about-us { flex-direction: column-reverse; }
+	.index-cover { background-image: none; flex-direction: column-reverse; align-items: center; height: auto; }
 	.about-img, .map-img { height: 50vh; }
 	section h2 { padding-top: 5%; }
 	.food-item { display: block; }
@@ -339,12 +342,12 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 		bottom: 0;
 	}
 	#container { margin-left: 0; }
-	ul.primary li { display: inline-block; width: 20%; float: left;}
+	ul.primary li { display: inline-block; width: 25%; float: left;}
 	ul.secondary li { display: block; }
 	.tooltip:hover:before, .tooltip:hover:after { display: none; }
 	i.fa-home:after, i.fa-utensils:after, i.fa-mobile-alt:after, i.fa-wine-glass-alt:after, i.fa-shopping-bag:after {     
 		font-size: 0.5em;
-	    font-family: 'Barlow', sans-serif;
+	    font-family: 'Montserrat', sans-serif;
 	    font-weight: 300;
 	    text-align: center;
 	    line-height: 1.6em;
