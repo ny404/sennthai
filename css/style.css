@@ -7,18 +7,18 @@
 
 }
 
-body { font-size: 1em; font-weight: 300; font-family: 'Montserrat', sans-serif; font-weight: 400; line-height: 1.6em; padding: 0; margin: 0; background: #191718;}
-h1, h2, h3 { font-family: '19-pralight', sans-serif; line-height: 1.2em; margin-top: 0; }
-h1 { font-size: 2.5em; color: #E9B857; }
-h2 { font-size: 2em; color: #E9B857; }
-h3 { font-size: 1.4em; color: #83D1DE; }
+body { font-size: 1em; font-family: 'Montserrat', sans-serif; font-weight: 400; line-height: 1.6em; padding: 0; margin: 0; background: #191718;}
+h1, h2, h3 { font-family: '19-pralight', sans-serif; font-weight: 500; line-height: 1.2em; margin-top: 0; text-transform: uppercase; }
+h1 { font-size: 2.4em; color: #cb9956; }
+h2 { font-size: 2em; color: #cb9956; }
+h3 { font-size: 1.6em; color: #cb9956; }
 p { font-size: 1em; color: #fff; }
-a { text-decoration: none; color: #E9B857; }
+a { text-decoration: none; color: #cb9956; }
 a:focus, button:focus { outline: 3px solid black; }
 .location { font-weight: 600; text-transform: uppercase; }
 .superscript { font-size: 1.4em; margin: 0; font-weight: 300; }
-.sub { font-size: 1.2em; line-height: 1.6em; color: #fff; font-style: normal; }
-.branding { width: 320px; height: 141px; display: block; }
+.sub { font-size: 1em; line-height: 1.6em; color: #fff; font-style: normal; }
+.branding { width: 320px; height: 141px; }
 .senn-symbol { display: none; }
 .branding-menu { width: 300px; height: 300px; margin: auto; display: block; }
 header { 
@@ -28,12 +28,12 @@ header {
 	/*padding: 2%;*/
 	display: flex;
 	flex-direction: row;
-
 	align-items: center;
 	flex-wrap: wrap;
 	color: #fff;
 }
-.index-cover { background: url('../images/senn-background.png') top right no-repeat #231f20; background-size: cover; align-items: normal; }
+.index-cover { background: #231f20; height: auto; }
+.index-cover main { background: url('../images/senn-background.png') top right no-repeat #231f20; background-size: cover; }
 .menu-cover { background: url('../images/rimnamthai-menu-cover.jpg') center no-repeat #16303A; background-size: cover; }
 .drinks-cover { background: url('../images/rimnamthai-drinks-cover.jpg') center no-repeat #16303A; background-size: cover;  }
 #nav-menu { 
@@ -67,7 +67,7 @@ header {
   margin-left:-5px; /* and add a small left margin */
   
   /* basic styles */
-  width:100px;
+  width:125px;
   padding: 2.5%;
   border-radius:5px;
   background:#000;
@@ -98,34 +98,8 @@ header {
 .tooltip:hover:before, .tooltip:hover:after {
   display:block;
 }
-/*.site-overlay {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #FFF;
-    visibility: hidden;
-    opacity: 0;
-    cursor: pointer;
-    height: 100vh;
 
-    -webkit-transition: visibility 0s ease, opacity .2s ease;
-    -moz-transition: visibility 0s ease, opacity .2s ease;
-    -o-transition: visibility 0s ease, opacity .2s ease;
-    transition: visibility 0s ease, opacity .2s ease;
-}
-.offside-js--is-open .site-overlay {
-    visibility: visible;
-    opacity: .7;
-    -webkit-transition-delay: delay 0s;
-    -o-transition-delay: delay 0s;
-    transition-delay: delay 0s;
-    cursor: url("../images/close.png") 16 16, pointer;
-}*/
-
-main { background: #222; }
+main { background: #231f20; }
 footer { 
 	background: #191718;
 	color: #fff;
@@ -138,7 +112,7 @@ footer {
 button { 
 	width: 150px;
 	padding: 15px;
-	background: #20BF55;
+	background: #cb9956;
 	color: #fff;
 	text-align: center;
 	border: none;
@@ -175,7 +149,7 @@ section {
 	max-width: 1366px;
 	width: auto;
 	margin: auto;
-	padding: 5% 5% 0;
+	padding: 5% 5%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -205,7 +179,7 @@ nav.scroll-wrapper { padding: 0 5%; background: #15435b; }
 
 section h2, p.subheading { width: 100%; }
 p.subheading { color: #E9B857; }
-hr { width: 100%; height: 1px; color: #E9B857; background: #E9B857; border: none; }
+hr { width: 100%; height: 1px; color: #cb9956; background: #cb9956; border: none; margin: 0; }
 
 .col-1 { width: 8.33333333%; }
 .col-2 { width: 16.66666667%; }
@@ -291,10 +265,10 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #83D1DE; }
 ul { list-style: none; padding: 10%; margin: 0; }
 li { line-height: 1.6em; padding: 5%;}
 ul.primary, ul.primary li { padding: 0; }
-ul.primary li a { color: #272d2d;  text-align: center;}
+ul.primary li a { color: #231f20;  text-align: center;}
 ul.secondary { text-align: center; padding: 0; }
 ul.secondary li { display: inline-block; padding: 1%; }
-ul.secondary li a { text-decoration: underline; color: #83D1DE;}
+ul.secondary li a { text-decoration: underline; color: #cb9956; }
 li a { width: 100%; display: inline-block; }
 
 i.fas { /*margin: 0 6.5px;*/ vertical-align: middle; }
@@ -317,10 +291,10 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 @media screen and (max-width: 767px){
 	header { height: 100vh; }
 	footer { margin-bottom: 15%; }
-	.branding { width: 240px; height: 106px; margin: auto; }
+	.branding { width: 240px; height: 106px; }
 	.senn-symbol { display: block; margin: auto; }
 	.branding-menu { width: 200px; height: 200px; }
-	.index-cover { background-image: none; flex-direction: column-reverse; align-items: center; height: auto; }
+	.index-cover { flex-direction: column-reverse; text-align: center; }
 	.about-img, .map-img { height: 50vh; }
 	section h2 { padding-top: 5%; }
 	.food-item { display: block; }
@@ -342,20 +316,20 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 		bottom: 0;
 	}
 	#container { margin-left: 0; }
-	ul.primary li { display: inline-block; width: 25%; float: left;}
+	ul.primary li { display: inline-block; width: 20%; float: left;}
 	ul.secondary li { display: block; }
 	.tooltip:hover:before, .tooltip:hover:after { display: none; }
-	i.fa-home:after, i.fa-utensils:after, i.fa-mobile-alt:after, i.fa-wine-glass-alt:after, i.fa-shopping-bag:after {     
-		font-size: 0.5em;
+	i.fa-home:after, i.fa-utensils:after, i.fa-mobile-alt:after, i.fa-image:after, i.fa-shopping-bag:after {     
+		font-size: 0.4em;
 	    font-family: 'Montserrat', sans-serif;
-	    font-weight: 300;
+	    font-weight: 600;
 	    text-align: center;
 	    line-height: 1.6em;
 	    display: block; 
 	}
 	i.fa-home:after { content: 'Home'; }
-	i.fa-utensils:after { content: 'Food'; }
+	i.fa-utensils:after { content: 'Menu'; }
 	i.fa-mobile-alt:after { content: 'Call'; }
-	i.fa-wine-glass-alt:after { content: 'Drink'; }
+	i.fa-image:after { content: 'Gallery'; margin-left: -3px; }
 	i.fa-shopping-bag:after { content: 'Order'; }
 }

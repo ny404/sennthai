@@ -1,2 +1,3 @@
 #231f20 - Background & Text
+#cb9956 - Button, Links
 #191718 - Footer
