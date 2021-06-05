@@ -8,18 +8,19 @@
 }
 
 body { font-size: 1em; font-family: 'Montserrat', sans-serif; font-weight: 400; line-height: 1.6em; padding: 0; margin: 0; background: #191718;}
-h1, h2, h3 { font-family: '19-pralight', sans-serif; font-weight: 500; line-height: 1.2em; margin-top: 0; text-transform: uppercase; }
+h1, h2, h3 { font-weight: 500; line-height: 1.2em; margin-top: 0;  }
 h1 { font-size: 2.4em; color: #cb9956; }
 h2 { font-size: 2em; color: #cb9956; }
-h3 { font-size: 1.6em; color: #cb9956; }
+h3 { font-family: '19-pralight', sans-serif; font-size: 1.6em; color: #cb9956; }
 p { font-size: 1em; color: #fff; }
 a { text-decoration: none; color: #cb9956; }
 a:focus, button:focus { outline: 3px solid black; }
-.location { font-weight: 600; text-transform: uppercase; }
+.bold-it { font-weight: 600; text-transform: uppercase; color: #fff; }
 .superscript { font-size: 1.4em; margin: 0; font-weight: 300; }
 .sub { font-size: 1em; line-height: 1.6em; color: #fff; font-style: normal; }
 .branding { width: 320px; height: 141px; }
 .senn-symbol { display: none; }
+.noodle-display { max-width: 720px; max-height: 631px; width: 100%; }
 .branding-menu { width: 300px; height: 300px; margin: auto; display: block; }
 header { 
 	height: 100vh;
@@ -33,9 +34,11 @@ header {
 	color: #fff;
 }
 .index-cover { background: #231f20; height: auto; }
-.index-cover main { background: url('../images/senn-background.png') top right no-repeat #231f20; background-size: cover; }
+main.index-body { background: url('../images/senn-background.png') center right no-repeat #231f20; background-size: 85%; }
 .menu-cover { background: url('../images/rimnamthai-menu-cover.jpg') center no-repeat #16303A; background-size: cover; }
 .drinks-cover { background: url('../images/rimnamthai-drinks-cover.jpg') center no-repeat #16303A; background-size: cover;  }
+.hours { width: 25%; float: left; }
+.hours:after { clear: both; }
 #nav-menu { 
 	background: #F0EDED;
 	font-size: 1.2em;
@@ -281,6 +284,7 @@ ul.footer-links { text-align: right; }
 ul.footer-links li { display: inline-block; padding: 0 1em; }
 
 @media screen and (max-width: 1024px){
+	.hours { width: 50%; }
 	#nav-menu { width: 15%; }
 	#container { margin-left: 15%; }
 	i.fa-fw { font-size: 2rem; }
@@ -295,6 +299,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	.senn-symbol { display: block; margin: auto; }
 	.branding-menu { width: 200px; height: 200px; }
 	.index-cover { flex-direction: column-reverse; text-align: center; }
+	main.index-body { background-image: none; }
 	.about-img, .map-img { height: 50vh; }
 	section h2 { padding-top: 5%; }
 	.food-item { display: block; }
