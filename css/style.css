@@ -161,6 +161,32 @@ section {
 }
 section:after { content:''; display: table; }
 section.scroll-indicator { padding: 0 5%; justify-content: flex-end; text-align: right; display: none; }
+.gallery {
+	display: inherit;
+	flex-flow: column wrap;
+	align-content: space-between;
+	/* Your container needs a fixed height, and it 
+	* needs to be taller than your tallest column. */
+	width: 100%;
+	height: 3400px;
+}
+.gallery-item { width: 33.33333333%; display: inherit; }
+.gallery-item img { width: 100%; max-width: 480px; }
+
+/* Re-order items into 3 rows */
+.gallery-item:nth-child(3n+1) { order: 1; }
+.gallery-item:nth-child(3n+2) { order: 2; }
+.gallery-item:nth-child(3n)   { order: 3; }
+
+/* Force new columns */
+.gallery::before,
+.gallery::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
 section.about-us, section.find-us { padding: 0; max-width: 100%; align-items: center; }
 .about-img, .map-img { 
 	background: center center no-repeat;
@@ -254,7 +280,7 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #83D1DE; }
   opacity: 0;
 }
 
-.preview { width: 100%; max-width: 270px; max-height: 270px; }
+.preview { width: 100%; max-width: 320px; }
 .price { color: #fff; font-weight: 700; }
 .tags { display: inline-block; margin-right: 5px; font-family: 'Montserrat', sans-serif; font-size: 0.75em; vertical-align: top; }
 .spicy { color: #ff8993; }
@@ -283,13 +309,21 @@ i.fa-level-up-alt { vertical-align: top; }
 ul.footer-links { text-align: right; }
 ul.footer-links li { display: inline-block; padding: 0 1em; }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1366px){
 	.hours { width: 50%; }
+	.gallery { height: 2900px; }
+}
+
+@media screen and (max-width: 1023px){
 	#nav-menu { width: 15%; }
 	#container { margin-left: 15%; }
 	i.fa-fw { font-size: 2rem; }
 	.food-item { width: 98%; margin: 1%; }
 	section.scroll-indicator { display: flex; }
+	.gallery { height: 3300px; }
+	.gallery-item { width: 50%; }
+	.gallery-item:nth-child(2n+1) { order: 1; }
+	.gallery-item:nth-child(2n+2) { order: 2; }
 }
 
 @media screen and (max-width: 767px){
@@ -300,6 +334,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	.branding-menu { width: 200px; height: 200px; }
 	.index-cover { flex-direction: column-reverse; text-align: center; }
 	main.index-body { background-image: none; }
+	.gallery { display: block; height: auto; }
 	.about-img, .map-img { height: 50vh; }
 	section h2 { padding-top: 5%; }
 	.food-item { display: block; }
