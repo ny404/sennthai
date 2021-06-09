@@ -258,14 +258,13 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #83D1DE; }
 
 .food-section { 
 	width: 47.5%;
-	margin-left: 2.5%;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: baseline;
 }
 
-.food-section:nth-of-type(even) { margin-right: 2.5%; margin-left: 0; }
-/*.food-section:nth-child(odd) { margin-left: 2.5%; }*/
+.left { margin-right: 2.5%; }
+.right { margin-left: 2.5%; }
 .food-section .food-item { width: 65%; padding-right: 5%; }
 .food-section .food-item.col-xs { width: 100%; padding-right: 0; }
 .food-section .price { width: 25%; padding-left: 5%; color: #fff; font-weight: 600; text-align: right; }
@@ -334,7 +333,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	.gallery { display: block; height: auto; }
 	.about-img, .map-img { height: 50vh; }
 	section h2 { padding-top: 5%; }
-	.food-section:nth-child(even), .food-section:nth-child(odd) { margin: 0; }
+	.left, .right { margin: 0; }
 	.preview { max-width: 375px; max-height: 375px; width: 100%; display: block; margin: auto; }
 	/*.divider img { width: 240px; height: 103px; }*/
 	.col-xs { width: 100%; }
