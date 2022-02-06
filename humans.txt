@@ -3,11 +3,11 @@
 
 # TEAM
 
-    Nick
+    TSPro, LLC
 
 # THANKS
 
-    KDNY Systems, Andrea Carraro, Webdevtrick.com
+    Andrea Carraro, Webdevtrick.com
 
 # TECHNOLOGY COLOPHON
 
