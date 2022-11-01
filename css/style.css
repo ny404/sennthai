@@ -265,9 +265,12 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #83D1DE; }
 
 .left { margin-right: 2.5%; }
 .right { margin-left: 2.5%; }
-.food-section .food-item { width: 65%; padding-right: 5%; }
+.food-section .food-image { width: 25%; padding-right: 5%; padding-bottom: 5%; }
+.food-section .food-image img { width: 100%; max-width: 200px; height: 100%; max-height: 150px; object-fit: cover; }
+.food-section .food-item { width: 55%; }
+.food-section .food-item-no-image { width: 85%; }
 .food-section .food-item.col-xs { width: 100%; padding-right: 0; }
-.food-section .price { width: 25%; padding-left: 5%; color: #fff; font-weight: 600; text-align: right; }
+.food-section .price { width: 12.5%; padding-left: 2.5%; color: #fff; font-weight: 600; text-align: right; }
 .food-section img {
   opacity: 1;
   transition: opacity 1s;
@@ -367,4 +370,6 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	i.fa-mobile-alt:after { content: 'Call'; }
 	i.fa-image:after { content: 'Gallery'; margin-left: -3px; }
 	i.fa-shopping-bag:after { content: 'Order'; }
+
+	.food-section .food-image img { max-height: none; }
 }
