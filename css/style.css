@@ -269,7 +269,8 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #83D1DE; }
 .food-section .food-image img { width: 100%; max-width: 200px; height: 100%; max-height: 150px; object-fit: cover; }
 .food-section .food-item { width: 55%; }
 .food-section .food-item-no-image { width: 85%; }
-.food-section .food-item.col-xs { width: 100%; padding-right: 0; }
+.food-section .food-item.col-xs { width: 70%; padding-right: 0; }
+.food-section .food-item-no-image.col-xs { width: 100%; padding-right: 0; }
 .food-section .price { width: 12.5%; padding-left: 2.5%; color: #fff; font-weight: 600; text-align: right; }
 .food-section img {
   opacity: 1;
