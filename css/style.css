@@ -131,15 +131,12 @@ button {
     display: inline-block;
 }
 a.map-button { 
-	width: 150px;
-	padding: 15px;
-	background: #20BF55;
+	padding: 10px;
+	background: #000;
 	color: #fff;
 	margin: 5% auto;
-	display: block;
-	text-align: center;
-	border: none;
-	border-radius: 5px;
+	border: 1.5px solid #cb9956;
+	border-radius: 10px;
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -255,6 +252,7 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #83D1DE; }
 .divider img { width: 320px; height: 137px; margin: auto; display:block; }
 
 .info { margin: 2.5% 0; border-top: 2.5px solid #cb9956; border-bottom: 2.5px solid #cb9956; }
+.lunch-info { margin: 2.5% 0; border-top: 2.5px solid #cb9956; border-bottom: 2.5px solid #cb9956; }
 
 .food-section { 
 	width: 47.5%;
