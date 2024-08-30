@@ -308,6 +308,9 @@ i.fa-level-up-alt { vertical-align: top; }
 ul.footer-links { text-align: right; }
 ul.footer-links li { display: inline-block; padding: 0 1em; }
 
+.fa-lg { font-size: initial; }
+.mobile-tooltip { display: none; }
+
 @media screen and (max-width: 1366px){
 	.hours { width: 50%; }
 	.gallery { height: 2900px; }
@@ -364,11 +367,13 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	    line-height: 1.6em;
 	    display: block; 
 	}
-	i.fa-home:after { content: 'Home'; }
-	i.fa-utensils:after { content: 'Menu'; }
-	i.fa-mobile-alt:after { content: 'Call'; }
-	i.fa-image:after { content: 'Gallery'; margin-left: -3px; }
-	i.fa-shopping-bag:after { content: 'Order'; }
-
+	.fa-house:after { content: 'Home'; }
+	.fa-utensils:after { content: 'Food'; }
+	.fa-mobile-screen:after { content: 'Call'; }
+	.fa-wine-glass:after { content: 'Drink'; }
+	.fa-bag-shopping:after { content: 'Order'; }
+	.fa-lg { font-size: 1.25em; }
+	.tooltip { padding: 10% 0 0; }
+	.mobile-tooltip { display: block; }
 	.food-section .food-image img { max-height: none; }
 }
